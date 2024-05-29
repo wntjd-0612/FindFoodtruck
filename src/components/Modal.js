@@ -28,11 +28,10 @@ const Modal = ({ closeModal }) => {
   return (
     <div className="modal" onClick={closeModal}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <h2>사용자</h2>
         <form id="modal-form" onSubmit={registerPlace}>
-          <input type="text" id="address" placeholder="찾고자 하는 주소를 입력하세요" value={address} onChange={(e) => setAddress(e.target.value)} />
-          <input type="text" id="place_name" placeholder="길거리 음식점의 이름을 입력하세요" value={placeName} onChange={(e) => setPlaceName(e.target.value)} />
-          <input type="text" id="place_kind" placeholder="어떤 음식을 파는 길거리 음식점인지 입력해주세요" value={placeKind} onChange={(e) => setPlaceKind(e.target.value)} />
+          <input type="text" id="address" placeholder="길거리 음식의 주소를 입력하세요" value={address} onChange={(e) => setAddress(e.target.value)} />
+          <input type="text" id="place_name" placeholder="길거리 음식의 이름을 입력하세요" value={placeName} onChange={(e) => setPlaceName(e.target.value)} />
+          <input type="text" id="place_kind" placeholder="길거리 음식의 종류를 입력하세요" value={placeKind} onChange={(e) => setPlaceKind(e.target.value)} />
           <button type="submit" id="submit-button">등록</button>
         </form>
       </div>

@@ -1,105 +1,117 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
 
 * {
-  font-family: "Pretendard";
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    font-family: "Pretendard";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 #map {
-  height: calc(100% - 50px); /* Adjusted to leave space for the bottom section */
-  width: 100%;
-  position: relative;
+    height: calc(100% - 50px);
+    /* Adjusted to leave space for the bottom section */
+    width: 100%;
+    position: relative;
 }
 
 #grey-area {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px; /* Adjusted to show less area */
-  background-color: #333; /* Darker background color */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1001;
-  transition: height 0.3s ease;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    /* Adjusted to show less area */
+    background-color: #333;
+    /* Darker background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    transition: height 0.3s ease;
 }
 
 #grey-area.expanded {
-  height: 70vh; /* Expanded height for the grey area */
+    height: 70vh;
+    /* Expanded height for the grey area */
 }
 
 #up-arrow {
-  color: #fff; /* White color for the arrow */
-  cursor: pointer;
-  font-size: 24px; /* Adjusted arrow size */
+    color: #fff;
+    /* White color for the arrow */
+    cursor: pointer;
+    font-size: 24px;
+    /* Adjusted arrow size */
 }
 
 #plus-container {
-  position: fixed;
-  bottom: 70px; /* Adjusted to position above the grey area */
-  right: 20px;
-  background-color: #000; /* Dark background color */
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
+    position: fixed;
+    bottom: 70px;
+    /* Adjusted to position above the grey area */
+    right: 20px;
+    background-color: #000;
+    /* Dark background color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 #plus-sign {
-  color: #fff; /* White color for the plus sign */
-  font-size: 30px;
+    color: #fff;
+    /* White color for the plus sign */
+    font-size: 30px;
 }
 
 /* Modal styles */
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1002;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1002;
+    color: #848389;
 }
 
 .modal-content {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #2C2C2E;
+    padding: 50px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 #modal-form input {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #2C2C2E;
 }
 
 #submit-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    background-color: #3F4347;
+    border: none;
+    border-radius: 5px;
+    color: #848389;
+    cursor: pointer;
 }
